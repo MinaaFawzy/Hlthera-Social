@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Medium.otf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="333" id="KGk-i7-Jjw" customClass="FindExpertTVC" customModule="HSN" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="361" height="333"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="361" height="333"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DOV-dJ-9bT">
+                        <rect key="frame" x="1" y="1" width="359" height="331"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7L-ay-Uex">
+                                <rect key="frame" x="15" y="15" width="329" height="17"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Zb-O6-uvB">
+                                <rect key="frame" x="15" y="37" width="329" height="14.5"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                                <color key="textColor" name="4"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOm-5M-gfw">
+                                <rect key="frame" x="15" y="59" width="329" height="14.5"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                                <color key="textColor" name="4"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="g7L-ay-Uex" firstAttribute="top" secondItem="DOV-dJ-9bT" secondAttribute="top" constant="15" id="95V-y9-axj"/>
+                            <constraint firstItem="4Zb-O6-uvB" firstAttribute="top" secondItem="g7L-ay-Uex" secondAttribute="bottom" constant="5" id="CXQ-fH-Fc6"/>
+                            <constraint firstItem="jOm-5M-gfw" firstAttribute="trailing" secondItem="4Zb-O6-uvB" secondAttribute="trailing" id="GyI-hw-QRi"/>
+                            <constraint firstItem="4Zb-O6-uvB" firstAttribute="leading" secondItem="g7L-ay-Uex" secondAttribute="leading" id="Pkl-1y-FrW"/>
+                            <constraint firstItem="4Zb-O6-uvB" firstAttribute="trailing" secondItem="g7L-ay-Uex" secondAttribute="trailing" id="TE1-mY-Scp"/>
+                            <constraint firstAttribute="trailing" secondItem="g7L-ay-Uex" secondAttribute="trailing" constant="15" id="afG-k2-pgk"/>
+                            <constraint firstItem="jOm-5M-gfw" firstAttribute="top" secondItem="4Zb-O6-uvB" secondAttribute="bottom" constant="7.5" id="oGR-rO-xh5"/>
+                            <constraint firstAttribute="bottom" secondItem="jOm-5M-gfw" secondAttribute="bottom" constant="15" id="p4M-qW-Ep3"/>
+                            <constraint firstItem="g7L-ay-Uex" firstAttribute="leading" secondItem="DOV-dJ-9bT" secondAttribute="leading" constant="15" id="w5L-b2-WX3"/>
+                            <constraint firstItem="jOm-5M-gfw" firstAttribute="leading" secondItem="4Zb-O6-uvB" secondAttribute="leading" id="zWd-hY-M3a"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius1">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="DOV-dJ-9bT" secondAttribute="bottom" constant="1" id="Oz5-no-i7u"/>
+                    <constraint firstItem="DOV-dJ-9bT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="1" id="U3C-Ep-Pbt"/>
+                    <constraint firstItem="DOV-dJ-9bT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="1" id="mzb-86-maE"/>
+                    <constraint firstAttribute="trailing" secondItem="DOV-dJ-9bT" secondAttribute="trailing" constant="1" id="u8L-fO-d6K"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="labelDescription" destination="4Zb-O6-uvB" id="zai-58-HMG"/>
+                <outlet property="labelTitle" destination="g7L-ay-Uex" id="YdE-8n-PZ9"/>
+                <outlet property="labelType" destination="jOm-5M-gfw" id="EMg-US-As3"/>
+            </connections>
+            <point key="canvasLocation" x="161.59420289855075" y="213.28125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="4">
+            <color red="0.51764705882352946" green="0.58039215686274515" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

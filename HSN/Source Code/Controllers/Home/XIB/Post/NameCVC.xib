@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="NameCVC" customModule="HSN" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="271" height="68"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="271" height="68"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CQM-iQ-s6P">
+                        <rect key="frame" x="0.0" y="0.0" width="271" height="68"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFE-NU-0rp">
+                                <rect key="frame" x="15" y="25.5" width="241" height="17"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDb-3O-hPq">
+                                <rect key="frame" x="230" y="21" width="26" height="26"/>
+                                <state key="normal" image="close"/>
+                                <connections>
+                                    <action selector="buttonRemoveTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="drl-VC-qho"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="7"/>
+                        <constraints>
+                            <constraint firstItem="tDb-3O-hPq" firstAttribute="centerY" secondItem="EFE-NU-0rp" secondAttribute="centerY" id="GRH-Lq-rjI"/>
+                            <constraint firstItem="tDb-3O-hPq" firstAttribute="trailing" secondItem="EFE-NU-0rp" secondAttribute="trailing" id="Ogv-we-b3r"/>
+                            <constraint firstAttribute="trailing" secondItem="EFE-NU-0rp" secondAttribute="trailing" constant="15" id="W6b-PW-UBP"/>
+                            <constraint firstItem="EFE-NU-0rp" firstAttribute="centerY" secondItem="CQM-iQ-s6P" secondAttribute="centerY" id="kYa-V2-HWR"/>
+                            <constraint firstItem="EFE-NU-0rp" firstAttribute="leading" secondItem="CQM-iQ-s6P" secondAttribute="leading" constant="15" id="ycZ-YJ-6rQ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius1">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="CQM-iQ-s6P" secondAttribute="trailing" id="9py-91-H4A"/>
+                <constraint firstItem="CQM-iQ-s6P" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Xku-Qi-xnE"/>
+                <constraint firstItem="CQM-iQ-s6P" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="dAL-R6-ZyA"/>
+                <constraint firstAttribute="bottom" secondItem="CQM-iQ-s6P" secondAttribute="bottom" id="z4d-3U-5U7"/>
+            </constraints>
+            <size key="customSize" width="271" height="68"/>
+            <connections>
+                <outlet property="labelName" destination="EFE-NU-0rp" id="VjA-iS-kPx"/>
+            </connections>
+            <point key="canvasLocation" x="142.75362318840581" y="118.52678571428571"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="close" width="26" height="26"/>
+        <namedColor name="7">
+            <color red="0.62745098039215685" green="0.76470588235294112" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

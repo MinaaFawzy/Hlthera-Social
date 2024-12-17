@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="161" id="KGk-i7-Jjw" customClass="ExperienceTVC" customModule="HSN" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="481" height="161"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="481" height="161"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Hr-sl-eS5" customClass="OwnTableView" customModule="HSN" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="481" height="156"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="156" id="eDZ-dL-1X1"/>
+                        </constraints>
+                    </tableView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FkL-ri-6NG">
+                        <rect key="frame" x="0.0" y="156" width="481" height="1"/>
+                        <color key="backgroundColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="aok-Oe-kQo"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="FkL-ri-6NG" secondAttribute="trailing" id="617-Ww-BLp"/>
+                    <constraint firstItem="5Hr-sl-eS5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="KaM-F6-LQd"/>
+                    <constraint firstItem="5Hr-sl-eS5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="UyF-1c-N1y"/>
+                    <constraint firstAttribute="trailing" secondItem="5Hr-sl-eS5" secondAttribute="trailing" id="WOC-1N-poK"/>
+                    <constraint firstAttribute="bottom" secondItem="FkL-ri-6NG" secondAttribute="bottom" id="i46-cV-hbv"/>
+                    <constraint firstItem="FkL-ri-6NG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="mBr-Fu-AlS"/>
+                    <constraint firstItem="FkL-ri-6NG" firstAttribute="top" secondItem="5Hr-sl-eS5" secondAttribute="bottom" id="w5d-2B-NSx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="constraintTableViewHeight" destination="eDZ-dL-1X1" id="qyO-cm-f4A"/>
+                <outlet property="tableView" destination="5Hr-sl-eS5" id="c8r-Nq-tXr"/>
+            </connections>
+            <point key="canvasLocation" x="248.55072463768118" y="157.03125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

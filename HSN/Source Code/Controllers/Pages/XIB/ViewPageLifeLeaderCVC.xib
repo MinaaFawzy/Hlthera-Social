@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Medium.otf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ViewPageLifeLeaderCVC" customModule="HSN" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="151" height="170"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="151" height="170"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wp0-OJ-jvj">
+                        <rect key="frame" x="0.0" y="0.0" width="151" height="170"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ox0-Ov-T7t">
+                                <rect key="frame" x="5" y="5" width="141" height="160"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="JK1-0w-nM8">
+                                        <rect key="frame" x="42.5" y="15" width="56" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="AtP-UG-j5L"/>
+                                            <constraint firstAttribute="width" constant="56" id="XuH-LV-UaD"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius1">
+                                                <real key="value" value="28"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Leader Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1M-8H-HaE">
+                                        <rect key="frame" x="15" y="86" width="111" height="20"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="16"/>
+                                        <color key="textColor" red="0.1176470588" green="0.2470588235" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="VP and Country Head, Educare, India" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1I-VD-5KN">
+                                        <rect key="frame" x="12" y="111" width="117" height="15"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                                        <color key="textColor" red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1d8-6f-2PB">
+                                        <rect key="frame" x="108" y="5" width="28" height="28"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="delete_post"/>
+                                        <connections>
+                                            <action selector="buttonDeleteTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="C8S-28-3Hn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="New 6"/>
+                                <constraints>
+                                    <constraint firstItem="JK1-0w-nM8" firstAttribute="top" secondItem="Ox0-Ov-T7t" secondAttribute="top" constant="15" id="3pt-zR-iDH"/>
+                                    <constraint firstItem="1d8-6f-2PB" firstAttribute="top" secondItem="Ox0-Ov-T7t" secondAttribute="top" constant="5" id="BmJ-2a-rj2"/>
+                                    <constraint firstAttribute="bottom" secondItem="x1I-VD-5KN" secondAttribute="bottom" constant="15" id="OqG-Cv-vf6"/>
+                                    <constraint firstItem="JK1-0w-nM8" firstAttribute="centerX" secondItem="Ox0-Ov-T7t" secondAttribute="centerX" id="dAN-8Z-Keh"/>
+                                    <constraint firstItem="I1M-8H-HaE" firstAttribute="leading" secondItem="Ox0-Ov-T7t" secondAttribute="leading" constant="15" id="evh-nP-wxw"/>
+                                    <constraint firstItem="I1M-8H-HaE" firstAttribute="top" secondItem="JK1-0w-nM8" secondAttribute="bottom" constant="15" id="hL6-8V-BI6"/>
+                                    <constraint firstAttribute="trailing" secondItem="x1I-VD-5KN" secondAttribute="trailing" constant="12" id="j7G-f2-hKO"/>
+                                    <constraint firstAttribute="trailing" secondItem="1d8-6f-2PB" secondAttribute="trailing" constant="5" id="ofC-9y-41I"/>
+                                    <constraint firstItem="x1I-VD-5KN" firstAttribute="leading" secondItem="Ox0-Ov-T7t" secondAttribute="leading" constant="12" id="pJD-GH-WXu"/>
+                                    <constraint firstItem="x1I-VD-5KN" firstAttribute="top" secondItem="I1M-8H-HaE" secondAttribute="bottom" constant="5" id="tlQ-qN-zR7"/>
+                                    <constraint firstAttribute="trailing" secondItem="I1M-8H-HaE" secondAttribute="trailing" constant="15" id="xXp-qE-Dzj"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ox0-Ov-T7t" firstAttribute="leading" secondItem="wp0-OJ-jvj" secondAttribute="leading" constant="5" id="IIg-7b-af4"/>
+                            <constraint firstAttribute="bottom" secondItem="Ox0-Ov-T7t" secondAttribute="bottom" constant="5" id="aV7-aW-09G"/>
+                            <constraint firstItem="Ox0-Ov-T7t" firstAttribute="top" secondItem="wp0-OJ-jvj" secondAttribute="top" constant="5" id="fEA-p3-UFd"/>
+                            <constraint firstAttribute="trailing" secondItem="Ox0-Ov-T7t" secondAttribute="trailing" constant="5" id="iwW-ON-OZa"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="wp0-OJ-jvj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2Bl-za-wSz"/>
+                <constraint firstItem="wp0-OJ-jvj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ZAv-VM-Pvd"/>
+                <constraint firstAttribute="trailing" secondItem="wp0-OJ-jvj" secondAttribute="trailing" id="dqr-D3-gWT"/>
+                <constraint firstAttribute="bottom" secondItem="wp0-OJ-jvj" secondAttribute="bottom" id="uLv-dd-Ljk"/>
+            </constraints>
+            <size key="customSize" width="151" height="170"/>
+            <connections>
+                <outlet property="buttonDelete" destination="1d8-6f-2PB" id="GIu-aq-kA6"/>
+                <outlet property="imageProfile" destination="JK1-0w-nM8" id="WNZ-WR-eRv"/>
+                <outlet property="labelName" destination="I1M-8H-HaE" id="Odo-dI-QzC"/>
+                <outlet property="labelProfile" destination="x1I-VD-5KN" id="csI-O4-aE7"/>
+            </connections>
+            <point key="canvasLocation" x="205.07246376811597" y="132.58928571428572"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="delete_post" width="28" height="28"/>
+        <image name="profile_placeholder" width="99" height="99"/>
+        <namedColor name="New 6">
+            <color red="0.79607843137254897" green="0.89411764705882357" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

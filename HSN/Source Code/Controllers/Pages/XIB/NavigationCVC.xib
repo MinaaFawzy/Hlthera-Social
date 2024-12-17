@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Medium.otf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="NavigationCVC" customModule="HSN" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="459" height="187"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="459" height="187"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="koe-PE-oeI">
+                        <rect key="frame" x="0.0" y="0.0" width="459" height="187"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xL1-q1-qEl">
+                                <rect key="frame" x="0.0" y="25.5" width="30" height="3"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.2470588235" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="3" id="OXG-eL-K39"/>
+                                    <constraint firstAttribute="width" constant="30" id="olK-9H-iCB"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius1">
+                                        <real key="value" value="1.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Specialization" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHb-8Y-e5R">
+                                <rect key="frame" x="0.0" y="5" width="459" height="18"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="15"/>
+                                <color key="textColor" name="New 5"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UHb-8Y-e5R" firstAttribute="leading" secondItem="koe-PE-oeI" secondAttribute="leading" id="3mj-4A-GLy"/>
+                            <constraint firstItem="xL1-q1-qEl" firstAttribute="leading" secondItem="koe-PE-oeI" secondAttribute="leading" id="5W0-zv-dhI"/>
+                            <constraint firstItem="UHb-8Y-e5R" firstAttribute="top" secondItem="koe-PE-oeI" secondAttribute="top" constant="5" id="5uJ-kB-0Q9"/>
+                            <constraint firstAttribute="trailing" secondItem="UHb-8Y-e5R" secondAttribute="trailing" id="btc-YV-CnE"/>
+                            <constraint firstItem="xL1-q1-qEl" firstAttribute="top" secondItem="UHb-8Y-e5R" secondAttribute="bottom" constant="2.5" id="rzs-Oo-MuH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="koe-PE-oeI" secondAttribute="bottom" id="8A4-PT-DbJ"/>
+                <constraint firstItem="koe-PE-oeI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Qej-MQ-sam"/>
+                <constraint firstItem="koe-PE-oeI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="eOo-fz-fpg"/>
+                <constraint firstAttribute="trailing" secondItem="koe-PE-oeI" secondAttribute="trailing" id="vVw-oy-ZbV"/>
+            </constraints>
+            <size key="customSize" width="459" height="187"/>
+            <connections>
+                <outlet property="labelName" destination="UHb-8Y-e5R" id="MOx-5K-OWb"/>
+                <outlet property="viewActiveInactive" destination="xL1-q1-qEl" id="uBS-bd-zzD"/>
+            </connections>
+            <point key="canvasLocation" x="434.05797101449281" y="127.56696428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="New 5">
+            <color red="0.14901960784313725" green="0.24313725490196078" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Corben-Bold.ttf">
+            <string>Corben-Bold</string>
+        </array>
+        <array key="SF-Pro-Display-Medium.otf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ReplyCommentHeaderCell" rowHeight="65" id="K2i-Wo-joh" customClass="ReplyCommentHeaderCell" customModule="HSN" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="428" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="K2i-Wo-joh" id="5au-xu-Mv1">
+                <rect key="frame" x="0.0" y="0.0" width="428" height="65"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yCx-Xj-pLn">
+                        <rect key="frame" x="15" y="0.0" width="398" height="62.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="2MF-L6-dbI">
+                                <rect key="frame" x="0.0" y="10" width="38" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="38" id="45n-k8-vVv"/>
+                                    <constraint firstAttribute="height" constant="38" id="nkV-gM-BYl"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius1">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prashant Panchal" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XgL-dS-LCC">
+                                <rect key="frame" x="56" y="20.5" width="143" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="5iV-4F-D6Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Corben-Bold" family="Corben" pointSize="12"/>
+                                <color key="textColor" red="0.14901960780000001" green="0.24313725489999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Stp-1a-rlv">
+                                <rect key="frame" x="207" y="16.5" width="150" height="25"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="replied" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CsM-Fv-r1N">
+                                        <rect key="frame" x="0.0" y="4.5" width="38.5" height="16"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="13"/>
+                                        <color key="textColor" red="0.25882352939999997" green="0.46274509800000002" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HRc-rf-dhn">
+                                        <rect key="frame" x="43.5" y="11" width="3" height="3"/>
+                                        <color key="backgroundColor" red="0.0" green="0.08235294118" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="3" id="Ra4-hk-dST"/>
+                                            <constraint firstAttribute="width" constant="3" id="vSV-Rq-dVD"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="circleCorner" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 replies" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPu-mi-1PJ">
+                                        <rect key="frame" x="51.5" y="4.5" width="47.5" height="16"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="13"/>
+                                        <color key="textColor" red="0.43137254899999999" green="0.43137254899999999" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="fPu-mi-1PJ" firstAttribute="leading" secondItem="HRc-rf-dhn" secondAttribute="trailing" constant="5" id="3AP-Xt-GKq"/>
+                                    <constraint firstAttribute="height" constant="25" id="Bgk-PD-Tlp"/>
+                                    <constraint firstItem="CsM-Fv-r1N" firstAttribute="leading" secondItem="Stp-1a-rlv" secondAttribute="leading" id="EUc-Ce-tpG"/>
+                                    <constraint firstItem="fPu-mi-1PJ" firstAttribute="centerY" secondItem="Stp-1a-rlv" secondAttribute="centerY" id="WOS-Tr-4mM"/>
+                                    <constraint firstItem="HRc-rf-dhn" firstAttribute="leading" secondItem="CsM-Fv-r1N" secondAttribute="trailing" constant="5" id="chb-Cn-MOg"/>
+                                    <constraint firstAttribute="width" constant="150" id="qsv-6D-hXN"/>
+                                    <constraint firstItem="HRc-rf-dhn" firstAttribute="centerY" secondItem="Stp-1a-rlv" secondAttribute="centerY" id="v8E-xC-Afj"/>
+                                    <constraint firstItem="CsM-Fv-r1N" firstAttribute="centerY" secondItem="Stp-1a-rlv" secondAttribute="centerY" id="zcA-5E-aEk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2MF-L6-dbI" firstAttribute="leading" secondItem="yCx-Xj-pLn" secondAttribute="leading" id="IVj-ph-E7E"/>
+                            <constraint firstItem="Stp-1a-rlv" firstAttribute="leading" secondItem="XgL-dS-LCC" secondAttribute="trailing" constant="8" id="JiF-zc-Mhe"/>
+                            <constraint firstItem="XgL-dS-LCC" firstAttribute="centerY" secondItem="2MF-L6-dbI" secondAttribute="centerY" id="ZaG-FM-kdD"/>
+                            <constraint firstItem="XgL-dS-LCC" firstAttribute="leading" secondItem="yCx-Xj-pLn" secondAttribute="leading" constant="56" id="bjv-km-RkU"/>
+                            <constraint firstItem="2MF-L6-dbI" firstAttribute="top" secondItem="yCx-Xj-pLn" secondAttribute="top" constant="10" id="d6w-xw-tma"/>
+                            <constraint firstItem="Stp-1a-rlv" firstAttribute="centerY" secondItem="XgL-dS-LCC" secondAttribute="centerY" id="gKf-lB-PYw"/>
+                            <constraint firstAttribute="height" constant="62.670000000000002" id="vXG-fo-2BZ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius1">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yCx-Xj-pLn" firstAttribute="top" secondItem="5au-xu-Mv1" secondAttribute="top" id="UxE-O7-tYp"/>
+                    <constraint firstAttribute="bottom" secondItem="yCx-Xj-pLn" secondAttribute="bottom" constant="2.5" id="iu8-dJ-z9I"/>
+                    <constraint firstItem="yCx-Xj-pLn" firstAttribute="leading" secondItem="5au-xu-Mv1" secondAttribute="leading" constant="15" id="xUz-3H-hhm"/>
+                    <constraint firstAttribute="trailing" secondItem="yCx-Xj-pLn" secondAttribute="trailing" constant="15" id="yAa-TM-dSf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageProfile" destination="2MF-L6-dbI" id="AJW-oi-t3G"/>
+                <outlet property="labelFullName" destination="XgL-dS-LCC" id="OXd-GZ-NVy"/>
+                <outlet property="lblReplyCount" destination="fPu-mi-1PJ" id="Opq-6i-WXd"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="profile_placeholder" width="99" height="99"/>
+    </resources>
+</document>

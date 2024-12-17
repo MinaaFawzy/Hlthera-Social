@@ -1,0 +1,20 @@
+{
+    "base_url": "https://hlthera-s3.s3-ap-southeast-2.amazonaws.com/",
+    "message": "success",
+    "my_data": {
+        "first_name": "Prashant",
+        "last_name": "Panchal",
+        "email": "test@test.com",
+        "mobile_number": "9560500000",
+        "profile_pic": "",
+        "employee_type": "",
+        "my_story": [
+            {
+                "id": 24,
+                "picture": "hlthera-social/story_picture/1620630087_31052.png",
+                "description": ""
+            }
+        ]
+    },
+    "other_story": {}
+}

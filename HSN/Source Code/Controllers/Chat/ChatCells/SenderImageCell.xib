@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="SenderImageCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="SenderImageCell" id="KGk-i7-Jjw" customClass="SenderImageCell" customModule="HSN" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="175"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="175"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uls-K3-f7R">
+                        <rect key="frame" x="187" y="8" width="173" height="160"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="160" id="IZg-lg-0HT"/>
+                            <constraint firstAttribute="width" constant="173" id="ZHM-mo-Zqm"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hZt-r4-R6Y">
+                        <rect key="frame" x="287" y="116.5" width="12" height="6"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btV-U1-jFE">
+                        <rect key="frame" x="187" y="8" width="173" height="160"/>
+                        <connections>
+                            <action selector="openImageAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="nlk-V3-V0N"/>
+                        </connections>
+                    </button>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TpQ-po-OFl">
+                        <rect key="frame" x="0.0" y="135" width="50" height="28"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="546-w4-xhg"/>
+                        </constraints>
+                        <state key="normal" image="delete_post"/>
+                        <connections>
+                            <action selector="tap_DeleteBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ene-ZF-pQU"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:04 PM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kL4-3M-SsO">
+                        <rect key="frame" x="375" y="149" width="52" height="14"/>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                        <color key="textColor" red="0.1960784314" green="0.2784313725" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="btV-U1-jFE" secondAttribute="trailing" constant="15" id="1qW-5R-TXc"/>
+                    <constraint firstItem="uls-K3-f7R" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="6gM-SH-TQa"/>
+                    <constraint firstItem="TpQ-po-OFl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="7wU-Xy-bBw"/>
+                    <constraint firstItem="btV-U1-jFE" firstAttribute="trailing" secondItem="uls-K3-f7R" secondAttribute="trailing" id="Blm-Z6-0aw"/>
+                    <constraint firstItem="TpQ-po-OFl" firstAttribute="bottom" secondItem="kL4-3M-SsO" secondAttribute="bottom" id="MOb-hC-mzW"/>
+                    <constraint firstItem="btV-U1-jFE" firstAttribute="leading" secondItem="uls-K3-f7R" secondAttribute="leading" id="PGX-bf-co6"/>
+                    <constraint firstItem="btV-U1-jFE" firstAttribute="bottom" secondItem="uls-K3-f7R" secondAttribute="bottom" id="QT9-cL-G7J"/>
+                    <constraint firstItem="kL4-3M-SsO" firstAttribute="bottom" secondItem="uls-K3-f7R" secondAttribute="bottom" constant="-5" id="cer-Tk-PCp"/>
+                    <constraint firstAttribute="bottom" secondItem="uls-K3-f7R" secondAttribute="bottom" constant="8" id="dpv-xK-sJZ"/>
+                    <constraint firstItem="btV-U1-jFE" firstAttribute="top" secondItem="uls-K3-f7R" secondAttribute="top" id="t8m-P1-qlf"/>
+                    <constraint firstItem="kL4-3M-SsO" firstAttribute="leading" secondItem="uls-K3-f7R" secondAttribute="trailing" constant="15" id="zoB-yY-M0N"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="btnDelete" destination="TpQ-po-OFl" id="NfT-8d-K7I"/>
+                <outlet property="imgTrailingConstraint" destination="1qW-5R-TXc" id="2FJ-Bs-lvn"/>
+                <outlet property="saveImgBtn" destination="btV-U1-jFE" id="hIq-hh-vLa"/>
+                <outlet property="sendimageView" destination="uls-K3-f7R" id="JXl-mV-SZ8"/>
+                <outlet property="tickImgView" destination="hZt-r4-R6Y" id="oRE-rY-9Ds"/>
+                <outlet property="time" destination="kL4-3M-SsO" id="5b2-mL-15i"/>
+            </connections>
+            <point key="canvasLocation" x="-270.28985507246381" y="70.647321428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="delete_post" width="28" height="28"/>
+    </resources>
+</document>

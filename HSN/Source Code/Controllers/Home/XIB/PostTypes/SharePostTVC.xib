@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="596" id="KGk-i7-Jjw" customClass="SharePostTVC" customModule="HSN" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="464" height="506"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="464" height="506"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0gO-Z8-GLM">
+                        <rect key="frame" x="15" y="5" width="434" height="491"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="fKi-iv-rgC">
+                                <rect key="frame" x="0.0" y="0.0" width="434" height="491"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fT2-Td-4ru">
+                                        <rect key="frame" x="0.0" y="0.0" width="434" height="36"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="eO7-hN-9ik"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEG-2o-8uq">
+                                        <rect key="frame" x="0.0" y="66.5" width="434" height="33.5"/>
+                                        <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Read More</string>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                        <color key="textColor" red="0.21176470589999999" green="0.21176470589999999" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uux-Xo-Hf9">
+                                        <rect key="frame" x="0.0" y="130.5" width="434" height="230"/>
+                                        <subviews>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" scrollEnabled="NO" bouncesZoom="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sn3-83-Ej5">
+                                                <rect key="frame" x="0.0" y="0.0" width="434" height="230"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="230" id="0Yb-Ks-IMZ"/>
+                                                </constraints>
+                                            </tableView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="sn3-83-Ej5" secondAttribute="bottom" id="2Ja-v3-ZX5"/>
+                                            <constraint firstItem="sn3-83-Ej5" firstAttribute="top" secondItem="uux-Xo-Hf9" secondAttribute="top" id="TUR-ij-dnK"/>
+                                            <constraint firstItem="sn3-83-Ej5" firstAttribute="leading" secondItem="uux-Xo-Hf9" secondAttribute="leading" id="mLN-XE-vQg"/>
+                                            <constraint firstAttribute="trailing" secondItem="sn3-83-Ej5" secondAttribute="trailing" id="wfM-NN-2uc"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zdS-A5-syc">
+                                        <rect key="frame" x="0.0" y="391" width="434" height="100"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="pcm-yF-iZe"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fKi-iv-rgC" secondAttribute="trailing" id="ICd-zP-hM7"/>
+                            <constraint firstAttribute="bottom" secondItem="fKi-iv-rgC" secondAttribute="bottom" id="OvJ-I8-Dmx"/>
+                            <constraint firstItem="fKi-iv-rgC" firstAttribute="top" secondItem="0gO-Z8-GLM" secondAttribute="top" id="X5J-HL-sPn"/>
+                            <constraint firstItem="fKi-iv-rgC" firstAttribute="leading" secondItem="0gO-Z8-GLM" secondAttribute="leading" id="dFm-gz-een"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.34999999999999998"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="2.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="0gO-Z8-GLM" secondAttribute="trailing" constant="15" id="172-es-T9u"/>
+                    <constraint firstItem="0gO-Z8-GLM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="RKW-0x-YeH"/>
+                    <constraint firstItem="0gO-Z8-GLM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="hJD-UN-mS7"/>
+                    <constraint firstAttribute="bottom" secondItem="0gO-Z8-GLM" secondAttribute="bottom" constant="10" id="jd0-kH-8VR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="constraintTableViewHeight" destination="0Yb-Ks-IMZ" id="iPR-xo-qtN"/>
+                <outlet property="labelDescription" destination="dEG-2o-8uq" id="OWn-jc-XPm"/>
+                <outlet property="tableView" destination="sn3-83-Ej5" id="x6k-ps-p3U"/>
+                <outlet property="viewFooter" destination="zdS-A5-syc" id="gkc-GT-QQy"/>
+                <outlet property="viewHeader" destination="fT2-Td-4ru" id="YmX-68-Azv"/>
+            </connections>
+            <point key="canvasLocation" x="236.23188405797103" y="278.57142857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

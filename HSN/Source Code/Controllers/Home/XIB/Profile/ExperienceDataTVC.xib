@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Medium.otf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="107" id="KGk-i7-Jjw" customClass="ExperienceDataTVC" customModule="HSN" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="506" height="107"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="506" height="107"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Mar 2021 - Present" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqD-kt-WyQ">
+                        <rect key="frame" x="80" y="67" width="103.5" height="14"/>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teeth care center, Dubai Marina - Dubai" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTA-cw-LFg">
+                        <rect key="frame" x="80" y="46" width="212.5" height="18.5"/>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Dentist" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sGV-sB-b1T">
+                        <rect key="frame" x="80" y="26" width="374" height="17.5"/>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="15"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clB-Zi-SOV">
+                        <rect key="frame" x="469" y="24" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="yIJ-hr-yfS"/>
+                            <constraint firstAttribute="height" constant="22" id="yKN-Qz-NP0"/>
+                        </constraints>
+                        <state key="normal" image="edit_profile"/>
+                        <connections>
+                            <action selector="buttonEditTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="I5N-B5-iGK"/>
+                        </connections>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dot" translatesAutoresizingMaskIntoConstraints="NO" id="JBh-UA-OBV">
+                        <rect key="frame" x="297.5" y="52.5" width="6" height="6"/>
+                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doctor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtr-fh-4pd">
+                        <rect key="frame" x="308.5" y="48.5" width="36.5" height="14"/>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dot" translatesAutoresizingMaskIntoConstraints="NO" id="yZI-se-oDv">
+                        <rect key="frame" x="188.5" y="71" width="6" height="6"/>
+                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 yr 7 mos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gR4-pP-vr1">
+                        <rect key="frame" x="199.5" y="67" width="56.5" height="14"/>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="K36-rg-pri">
+                        <rect key="frame" x="15" y="26" width="55" height="55"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="55" id="PQb-oM-Keh"/>
+                            <constraint firstAttribute="width" constant="55" id="WCQ-tf-ZDf"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius1">
+                                <real key="value" value="27.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yZI-se-oDv" firstAttribute="leading" secondItem="dqD-kt-WyQ" secondAttribute="trailing" constant="5" id="1gn-AL-GQI"/>
+                    <constraint firstItem="JBh-UA-OBV" firstAttribute="leading" secondItem="yTA-cw-LFg" secondAttribute="trailing" constant="5" id="7Zg-mK-UqU"/>
+                    <constraint firstItem="clB-Zi-SOV" firstAttribute="centerY" secondItem="sGV-sB-b1T" secondAttribute="centerY" id="Bnd-OC-28t"/>
+                    <constraint firstItem="gR4-pP-vr1" firstAttribute="leading" secondItem="yZI-se-oDv" secondAttribute="trailing" constant="5" id="Djn-5X-Z3E"/>
+                    <constraint firstItem="K36-rg-pri" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Eep-oi-rTs"/>
+                    <constraint firstItem="K36-rg-pri" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Ifv-ap-mcg"/>
+                    <constraint firstItem="gtr-fh-4pd" firstAttribute="centerY" secondItem="JBh-UA-OBV" secondAttribute="centerY" id="KBi-oZ-f85"/>
+                    <constraint firstItem="yTA-cw-LFg" firstAttribute="top" secondItem="sGV-sB-b1T" secondAttribute="bottom" constant="2.5" id="KdG-Gw-A3g"/>
+                    <constraint firstItem="dqD-kt-WyQ" firstAttribute="leading" secondItem="yTA-cw-LFg" secondAttribute="leading" id="Lgp-KP-6pF"/>
+                    <constraint firstItem="sGV-sB-b1T" firstAttribute="leading" secondItem="K36-rg-pri" secondAttribute="trailing" constant="10" id="PJz-2V-5L9"/>
+                    <constraint firstItem="dqD-kt-WyQ" firstAttribute="top" secondItem="yTA-cw-LFg" secondAttribute="bottom" constant="2.5" id="Qey-6h-s6c"/>
+                    <constraint firstItem="sGV-sB-b1T" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="15" id="Rfm-es-0XZ"/>
+                    <constraint firstItem="clB-Zi-SOV" firstAttribute="leading" secondItem="sGV-sB-b1T" secondAttribute="trailing" constant="15" id="V5y-yf-wxH"/>
+                    <constraint firstAttribute="trailing" secondItem="clB-Zi-SOV" secondAttribute="trailing" constant="15" id="dRX-RK-pIF"/>
+                    <constraint firstItem="yZI-se-oDv" firstAttribute="centerY" secondItem="dqD-kt-WyQ" secondAttribute="centerY" id="fgQ-E1-Q5B"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="dqD-kt-WyQ" secondAttribute="bottom" constant="15" id="ihA-fw-2w0"/>
+                    <constraint firstItem="yTA-cw-LFg" firstAttribute="leading" secondItem="sGV-sB-b1T" secondAttribute="leading" id="jZV-bV-D8z"/>
+                    <constraint firstItem="gtr-fh-4pd" firstAttribute="leading" secondItem="JBh-UA-OBV" secondAttribute="trailing" constant="5" id="uxO-Yj-n0C"/>
+                    <constraint firstItem="JBh-UA-OBV" firstAttribute="centerY" secondItem="yTA-cw-LFg" secondAttribute="centerY" id="wXP-fc-8Mp"/>
+                    <constraint firstItem="gR4-pP-vr1" firstAttribute="centerY" secondItem="yZI-se-oDv" secondAttribute="centerY" id="xkl-qB-iIu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="buttonEdit" destination="clB-Zi-SOV" id="Lux-yA-Od7"/>
+                <outlet property="imageCompany" destination="K36-rg-pri" id="K1u-zv-W5s"/>
+                <outlet property="imageDot" destination="JBh-UA-OBV" id="S6U-ap-Gjt"/>
+                <outlet property="labelDate" destination="dqD-kt-WyQ" id="yYJ-iW-Cio"/>
+                <outlet property="labelLocatino" destination="yTA-cw-LFg" id="gjH-JJ-Hao"/>
+                <outlet property="labelProfession" destination="gtr-fh-4pd" id="L3k-HD-ECk"/>
+                <outlet property="labelTitle" destination="sGV-sB-b1T" id="WFe-Hq-KTR"/>
+                <outlet property="labelTotalExperience" destination="gR4-pP-vr1" id="2BU-3C-CXZ"/>
+            </connections>
+            <point key="canvasLocation" x="208.69565217391306" y="151.67410714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dot" width="6" height="6"/>
+        <image name="edit_profile" width="19" height="19.5"/>
+        <image name="profile_placeholder" width="99" height="99"/>
+    </resources>
+</document>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Light.otf">
+            <string>SFProDisplay-Light</string>
+        </array>
+        <array key="SF-Pro-Display-Medium.otf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="114" id="KGk-i7-Jjw" customClass="AcceptRejectNotificationTVC" customModule="HSN" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="430" height="114"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="430" height="114"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1qI-9z-876">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="114"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="YoE-Fo-juL">
+                                <rect key="frame" x="23" y="15" width="47" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="47" id="2Q0-Kb-xAf"/>
+                                    <constraint firstAttribute="height" constant="47" id="tIp-xX-EJ3"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius1">
+                                        <real key="value" value="23.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth1">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor1">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Connected 2 week ago" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVI-OM-DQQ">
+                                <rect key="frame" x="85" y="15" width="330" height="17"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gvz-rE-oVn">
+                                <rect key="frame" x="215" y="69" width="200" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOo-jZ-RhR" customClass="ResizableButton" customModule="HSN" customModuleProvider="target">
+                                        <rect key="frame" x="110" y="0.0" width="90" height="30"/>
+                                        <color key="backgroundColor" name="5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="GCR-Zj-Voc"/>
+                                            <constraint firstAttribute="width" constant="90" id="oZD-zd-ZbL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="14"/>
+                                        <state key="normal" title="Accept">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius1">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonJoinTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ZhE-yo-8Yo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVA-El-KlL" customClass="ResizableButton" customModule="HSN" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="30"/>
+                                        <color key="backgroundColor" name="10"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="pYn-EA-sen"/>
+                                            <constraint firstAttribute="height" constant="30" id="seI-If-ITR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="14"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" name="5"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius1">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonCancelTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="YmL-jH-AKB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="Card Background Color"/>
+                                <constraints>
+                                    <constraint firstItem="gVA-El-KlL" firstAttribute="top" secondItem="gvz-rE-oVn" secondAttribute="top" id="AK6-HA-0Dg"/>
+                                    <constraint firstItem="pOo-jZ-RhR" firstAttribute="leading" secondItem="gVA-El-KlL" secondAttribute="trailing" constant="20" id="Cdg-pr-trV"/>
+                                    <constraint firstAttribute="bottom" secondItem="pOo-jZ-RhR" secondAttribute="bottom" id="Ede-gW-qaH"/>
+                                    <constraint firstAttribute="bottom" secondItem="gVA-El-KlL" secondAttribute="bottom" id="G0o-3T-ims"/>
+                                    <constraint firstItem="gVA-El-KlL" firstAttribute="leading" secondItem="gvz-rE-oVn" secondAttribute="leading" id="Ri0-og-d7i"/>
+                                    <constraint firstAttribute="height" constant="30" id="SqB-Jq-qIE"/>
+                                    <constraint firstItem="gVA-El-KlL" firstAttribute="centerY" secondItem="pOo-jZ-RhR" secondAttribute="centerY" id="bkP-b1-lej"/>
+                                    <constraint firstAttribute="trailing" secondItem="pOo-jZ-RhR" secondAttribute="trailing" id="r80-da-W50"/>
+                                    <constraint firstItem="pOo-jZ-RhR" firstAttribute="top" secondItem="gvz-rE-oVn" secondAttribute="top" id="sXO-9u-3zr"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jsj-AR-7wM">
+                                <rect key="frame" x="85" y="37" width="23" height="22"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="10"/>
+                                <color key="textColor" red="0.61568627450980395" green="0.61568627450980395" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a68-Gv-w1l">
+                                <rect key="frame" x="395" y="27.5" width="20" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="3jF-hu-yYb"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="more-3"/>
+                                <connections>
+                                    <action selector="moreTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ByO-HX-peu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="gvz-rE-oVn" secondAttribute="bottom" constant="15" id="0tw-Rx-uBv"/>
+                            <constraint firstAttribute="trailing" secondItem="a68-Gv-w1l" secondAttribute="trailing" constant="15" id="2sv-3T-T7g"/>
+                            <constraint firstItem="YoE-Fo-juL" firstAttribute="top" secondItem="EVI-OM-DQQ" secondAttribute="top" id="3XW-iF-oB9"/>
+                            <constraint firstItem="Jsj-AR-7wM" firstAttribute="top" secondItem="EVI-OM-DQQ" secondAttribute="bottom" constant="5" id="4n6-Qn-4bw"/>
+                            <constraint firstItem="gvz-rE-oVn" firstAttribute="top" secondItem="Jsj-AR-7wM" secondAttribute="bottom" constant="10" id="JTa-ya-Q6j"/>
+                            <constraint firstItem="EVI-OM-DQQ" firstAttribute="top" secondItem="1qI-9z-876" secondAttribute="top" constant="15" id="LIF-Dj-2Tw"/>
+                            <constraint firstItem="a68-Gv-w1l" firstAttribute="centerY" secondItem="YoE-Fo-juL" secondAttribute="centerY" id="Okr-M6-iEe"/>
+                            <constraint firstAttribute="trailing" secondItem="EVI-OM-DQQ" secondAttribute="trailing" constant="15" id="Op5-4c-qyy"/>
+                            <constraint firstAttribute="trailing" secondItem="gvz-rE-oVn" secondAttribute="trailing" constant="15" id="gMF-vu-Wl7"/>
+                            <constraint firstItem="Jsj-AR-7wM" firstAttribute="leading" secondItem="EVI-OM-DQQ" secondAttribute="leading" id="heI-qF-Per"/>
+                            <constraint firstItem="EVI-OM-DQQ" firstAttribute="leading" secondItem="YoE-Fo-juL" secondAttribute="trailing" constant="15" id="yBo-ok-e1J"/>
+                            <constraint firstItem="YoE-Fo-juL" firstAttribute="leading" secondItem="1qI-9z-876" secondAttribute="leading" constant="23" id="ybx-GB-oOT"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius1">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" name="Card Background Color"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="1qI-9z-876" secondAttribute="bottom" id="XYA-Fu-GOO"/>
+                    <constraint firstItem="1qI-9z-876" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ZHA-tV-yRx"/>
+                    <constraint firstAttribute="trailing" secondItem="1qI-9z-876" secondAttribute="trailing" id="gyi-31-sXE"/>
+                    <constraint firstItem="1qI-9z-876" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="iLx-Jl-kQc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" name="Card Background Color"/>
+            <connections>
+                <outlet property="constraintViewAcceptRejectHeight" destination="SqB-Jq-qIE" id="4bp-T3-NZX"/>
+                <outlet property="labelTime" destination="Jsj-AR-7wM" id="xd0-2A-S2D"/>
+                <outlet property="labelTitle" destination="EVI-OM-DQQ" id="MRG-39-SVA"/>
+                <outlet property="mainView" destination="1qI-9z-876" id="Dpo-ql-nuI"/>
+                <outlet property="profileImage" destination="YoE-Fo-juL" id="ZSi-3o-imp"/>
+                <outlet property="viewAcceptReject" destination="gvz-rE-oVn" id="5oN-Ml-AiR"/>
+            </connections>
+            <point key="canvasLocation" x="236" y="76"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="more-3" width="16" height="3.5"/>
+        <image name="profile_placeholder" width="99" height="99"/>
+        <namedColor name="10">
+            <color red="0.85490196078431369" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="5">
+            <color red="0.11764705882352941" green="0.24705882352941178" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Card Background Color">
+            <color red="0.96078431372549022" green="0.96862745098039216" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

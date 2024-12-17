@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LoungeHeaderView" customModule="HSN" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="619" height="291"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XsW-Aj-etr">
+                    <rect key="frame" x="0.0" y="0.0" width="619" height="291"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="1Vo-Wz-xG5">
+                            <rect key="frame" x="0.0" y="174" width="619" height="107"/>
+                            <color key="backgroundColor" red="0.96078431369999995" green="0.96862745100000003" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="107" id="cra-PZ-gKb"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ADC-mP-brg">
+                                <size key="itemSize" width="289" height="71"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <cells/>
+                        </collectionView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ux1-mh-AKp">
+                            <rect key="frame" x="564" y="71" width="40" height="27"/>
+                            <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="View All">
+                                <color key="titleColor" red="0.16862745100000001" green="0.47058823529999999" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonViewAllTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="Gas-8G-RsW"/>
+                            </connections>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lounge_blue" translatesAutoresizingMaskIntoConstraints="NO" id="37q-PP-12f">
+                            <rect key="frame" x="15" y="5" width="80" height="159"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="1Vo-Wz-xG5" firstAttribute="leading" secondItem="XsW-Aj-etr" secondAttribute="leading" id="1Mx-w0-jMA"/>
+                        <constraint firstAttribute="trailing" secondItem="1Vo-Wz-xG5" secondAttribute="trailing" id="7ab-Bc-WgT"/>
+                        <constraint firstAttribute="trailing" secondItem="ux1-mh-AKp" secondAttribute="trailing" constant="15" id="93b-VC-DR8"/>
+                        <constraint firstAttribute="bottom" secondItem="1Vo-Wz-xG5" secondAttribute="bottom" constant="10" id="HTI-PU-KiY"/>
+                        <constraint firstItem="1Vo-Wz-xG5" firstAttribute="top" secondItem="37q-PP-12f" secondAttribute="bottom" constant="10" id="MP5-yj-tfD"/>
+                        <constraint firstItem="37q-PP-12f" firstAttribute="top" secondItem="XsW-Aj-etr" secondAttribute="top" constant="5" id="U4s-oj-xmT"/>
+                        <constraint firstItem="37q-PP-12f" firstAttribute="leading" secondItem="XsW-Aj-etr" secondAttribute="leading" constant="15" id="evK-sy-1eK"/>
+                        <constraint firstItem="37q-PP-12f" firstAttribute="centerY" secondItem="ux1-mh-AKp" secondAttribute="centerY" id="zyY-bz-hcG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96862745098039216" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XsW-Aj-etr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="GYk-Me-J6K"/>
+                <constraint firstAttribute="bottom" secondItem="XsW-Aj-etr" secondAttribute="bottom" id="M22-bj-gKH"/>
+                <constraint firstAttribute="trailing" secondItem="XsW-Aj-etr" secondAttribute="trailing" id="Ra5-CX-zxg"/>
+                <constraint firstItem="XsW-Aj-etr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="gny-4m-DPr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collectionViewLounge" destination="1Vo-Wz-xG5" id="tl5-R3-ZvJ"/>
+            </connections>
+            <point key="canvasLocation" x="280.43478260869568" y="-71.986607142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="lounge_blue" width="80" height="30"/>
+    </resources>
+</document>

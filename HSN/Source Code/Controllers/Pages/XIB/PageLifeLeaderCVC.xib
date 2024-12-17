@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PageLifeLeaderCVC" customModule="HSN" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="143" height="147"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="143" height="147"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fPx-LY-FFY">
+                        <rect key="frame" x="0.0" y="0.0" width="143" height="147"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 104765" translatesAutoresizingMaskIntoConstraints="NO" id="K5P-iR-UIf">
+                                <rect key="frame" x="0.0" y="0.0" width="143" height="147"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PS2-8z-u67">
+                                <rect key="frame" x="59.5" y="48" width="24.5" height="24.5"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="Group 104767"/>
+                                <connections>
+                                    <action selector="buttonAddLeaderTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="H7Q-0S-xvj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Company Leader" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ny-gv-fYi">
+                                <rect key="frame" x="15" y="77.5" width="113" height="14.5"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                                <color key="textColor" red="0.72549019609999998" green="0.72549019609999998" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="K5P-iR-UIf" firstAttribute="top" secondItem="fPx-LY-FFY" secondAttribute="top" id="19s-Cw-ezg"/>
+                            <constraint firstItem="1ny-gv-fYi" firstAttribute="leading" secondItem="fPx-LY-FFY" secondAttribute="leading" constant="15" id="20M-b0-kGz"/>
+                            <constraint firstAttribute="trailing" secondItem="K5P-iR-UIf" secondAttribute="trailing" id="8AU-XU-Cd6"/>
+                            <constraint firstItem="1ny-gv-fYi" firstAttribute="top" secondItem="PS2-8z-u67" secondAttribute="bottom" constant="5" id="JvR-TR-xym"/>
+                            <constraint firstItem="1ny-gv-fYi" firstAttribute="centerX" secondItem="PS2-8z-u67" secondAttribute="centerX" id="NW2-EN-ZcT"/>
+                            <constraint firstItem="PS2-8z-u67" firstAttribute="centerY" secondItem="K5P-iR-UIf" secondAttribute="centerY" constant="-13.119999999999999" id="f96-72-2gj"/>
+                            <constraint firstAttribute="trailing" secondItem="1ny-gv-fYi" secondAttribute="trailing" constant="15" id="fcu-eb-3qh"/>
+                            <constraint firstItem="PS2-8z-u67" firstAttribute="centerX" secondItem="K5P-iR-UIf" secondAttribute="centerX" id="hWP-T4-jz7"/>
+                            <constraint firstItem="K5P-iR-UIf" firstAttribute="leading" secondItem="fPx-LY-FFY" secondAttribute="leading" id="sXJ-R1-Nss"/>
+                            <constraint firstAttribute="bottom" secondItem="K5P-iR-UIf" secondAttribute="bottom" id="yUs-iv-t3b"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="fPx-LY-FFY" secondAttribute="bottom" id="7Wy-Cz-9PC"/>
+                <constraint firstAttribute="trailing" secondItem="fPx-LY-FFY" secondAttribute="trailing" id="hQw-Zr-Nk4"/>
+                <constraint firstItem="fPx-LY-FFY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="le1-R1-Ncv"/>
+                <constraint firstItem="fPx-LY-FFY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pZ2-vt-RYT"/>
+            </constraints>
+            <size key="customSize" width="143" height="147"/>
+            <point key="canvasLocation" x="199.27536231884059" y="124.21875"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Group 104765" width="80" height="81.5"/>
+        <image name="Group 104767" width="24.5" height="24.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

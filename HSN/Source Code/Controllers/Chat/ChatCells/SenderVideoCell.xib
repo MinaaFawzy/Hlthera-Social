@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="gotham-rounded-book.otf">
+            <string>GothamRounded-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="SenderVideoCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="SenderVideoCell" id="KGk-i7-Jjw" customClass="SenderVideoCell" customModule="HSN" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="175"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="175"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E0q-EK-iWI">
+                        <rect key="frame" x="25" y="5" width="250" height="250"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="250" id="Cyr-eN-GkX"/>
+                            <constraint firstAttribute="height" constant="250" id="heB-iT-kFY"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pbn-5a-wuA">
+                        <rect key="frame" x="0.0" y="222" width="50" height="28"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="pxk-ae-Wda"/>
+                        </constraints>
+                        <state key="normal" image="delete_post"/>
+                        <connections>
+                            <action selector="tap_DeleteBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ALO-Lj-8qX"/>
+                        </connections>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="chat_doubleTick" translatesAutoresizingMaskIntoConstraints="NO" id="kYG-Di-Vnf">
+                        <rect key="frame" x="207" y="260" width="12" height="6"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="6" id="Anl-j4-9SO"/>
+                            <constraint firstAttribute="width" constant="12" id="bOr-8u-EOe"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LvY-GJ-fzo">
+                        <rect key="frame" x="25" y="5" width="250" height="250"/>
+                        <state key="normal" image="play_butoon"/>
+                        <connections>
+                            <action selector="btnPlayVideo:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="qmE-xg-8bd"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:04 PM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3F-go-AeD">
+                        <rect key="frame" x="290" y="235" width="52" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="JFc-b2-WBk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="12"/>
+                        <color key="textColor" red="0.30588235289999999" green="0.32156862749999998" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="LvY-GJ-fzo" firstAttribute="bottom" secondItem="E0q-EK-iWI" secondAttribute="bottom" id="2Fk-9S-1IY"/>
+                    <constraint firstItem="Pbn-5a-wuA" firstAttribute="bottom" secondItem="C3F-go-AeD" secondAttribute="bottom" id="D9N-a1-lSL"/>
+                    <constraint firstItem="kYG-Di-Vnf" firstAttribute="top" secondItem="E0q-EK-iWI" secondAttribute="bottom" constant="5" id="Fxl-9N-FxF"/>
+                    <constraint firstItem="C3F-go-AeD" firstAttribute="leading" secondItem="E0q-EK-iWI" secondAttribute="trailing" constant="15" id="HgK-yK-Adb"/>
+                    <constraint firstItem="LvY-GJ-fzo" firstAttribute="trailing" secondItem="E0q-EK-iWI" secondAttribute="trailing" id="IFh-Zf-CXX"/>
+                    <constraint firstItem="LvY-GJ-fzo" firstAttribute="leading" secondItem="E0q-EK-iWI" secondAttribute="leading" id="L02-ne-vsm"/>
+                    <constraint firstItem="LvY-GJ-fzo" firstAttribute="top" secondItem="E0q-EK-iWI" secondAttribute="top" id="PDQ-5P-LHX"/>
+                    <constraint firstItem="E0q-EK-iWI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Rnm-Xm-dRq"/>
+                    <constraint firstAttribute="trailing" secondItem="E0q-EK-iWI" secondAttribute="trailing" constant="100" id="cY6-Hu-ZSf"/>
+                    <constraint firstItem="C3F-go-AeD" firstAttribute="bottom" secondItem="E0q-EK-iWI" secondAttribute="bottom" constant="-5" id="iH7-Cg-lDr"/>
+                    <constraint firstItem="Pbn-5a-wuA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="sTf-r0-XEu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="btnDelete" destination="Pbn-5a-wuA" id="AIA-X1-rug"/>
+                <outlet property="imgTrailingConstraint" destination="cY6-Hu-ZSf" id="C71-kU-1xU"/>
+                <outlet property="sendimageView" destination="E0q-EK-iWI" id="3Jz-F9-W4D"/>
+                <outlet property="tickImgView" destination="kYG-Di-Vnf" id="ep6-Ob-fzX"/>
+                <outlet property="time" destination="C3F-go-AeD" id="6Ej-ZR-sbc"/>
+                <outlet property="videoBtn" destination="LvY-GJ-fzo" id="VVU-Ym-xPk"/>
+            </connections>
+            <point key="canvasLocation" x="26.086956521739133" y="113.50446428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chat_doubleTick" width="12" height="6"/>
+        <image name="delete_post" width="28" height="28"/>
+        <image name="play_butoon" width="36" height="36"/>
+    </resources>
+</document>

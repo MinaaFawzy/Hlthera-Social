@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "undraw_add_to_cart_re_wrdo.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "undraw_add_to_cart_re_wrdo@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "undraw_add_to_cart_re_wrdo@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

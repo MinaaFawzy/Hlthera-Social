@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Medium.otf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="261" id="KGk-i7-Jjw" customClass="RateRecommendReviewTVC" customModule="HSN" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="516" height="261"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="516" height="261"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ve-lz-Ixk">
+                        <rect key="frame" x="15" y="5" width="486" height="236"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21 Mar 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0u-Fk-W1O">
+                                <rect key="frame" x="418.5" y="189.5" width="52.5" height="12"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="10"/>
+                                <color key="textColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="sG8-Sz-Xag">
+                                <rect key="frame" x="15" y="187" width="34" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="70m-OS-c9T"/>
+                                    <constraint firstAttribute="width" constant="34" id="KkY-lM-MV6"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius1">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="James M. Rose" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8h-bo-z2Z">
+                                <rect key="frame" x="64" y="187" width="91" height="17"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Psychiatrists" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SK7-cL-QWj">
+                                <rect key="frame" x="64" y="204" width="63.5" height="14"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                                <color key="textColor" name="4"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ratings" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXS-dR-Gc4">
+                                <rect key="frame" x="15" y="15" width="456" height="132"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                                <color key="textColor" red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pRj-Io-xm8" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="15" y="152" width="456" height="20"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="IzO-w1-zlE"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="filledImage" value="filled_star"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="hollow_star"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starMargin">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fXS-dR-Gc4" firstAttribute="top" secondItem="7ve-lz-Ixk" secondAttribute="top" constant="15" id="1aT-E5-cia"/>
+                            <constraint firstItem="fXS-dR-Gc4" firstAttribute="leading" secondItem="7ve-lz-Ixk" secondAttribute="leading" constant="15" id="2Ae-gO-X5d"/>
+                            <constraint firstItem="pRj-Io-xm8" firstAttribute="top" secondItem="fXS-dR-Gc4" secondAttribute="bottom" constant="5" id="DdS-ts-bvi"/>
+                            <constraint firstItem="SK7-cL-QWj" firstAttribute="leading" secondItem="M8h-bo-z2Z" secondAttribute="leading" id="HoB-lp-Em1"/>
+                            <constraint firstAttribute="bottom" secondItem="sG8-Sz-Xag" secondAttribute="bottom" constant="15" id="MhF-Ff-uoJ"/>
+                            <constraint firstItem="sG8-Sz-Xag" firstAttribute="top" secondItem="pRj-Io-xm8" secondAttribute="bottom" constant="15" id="Nyc-Si-iTd"/>
+                            <constraint firstItem="pRj-Io-xm8" firstAttribute="leading" secondItem="sG8-Sz-Xag" secondAttribute="leading" id="Oxu-Rb-gij"/>
+                            <constraint firstAttribute="trailing" secondItem="fXS-dR-Gc4" secondAttribute="trailing" constant="15" id="QI6-cf-vEt"/>
+                            <constraint firstItem="M8h-bo-z2Z" firstAttribute="leading" secondItem="sG8-Sz-Xag" secondAttribute="trailing" constant="15" id="Rm7-yL-9s9"/>
+                            <constraint firstItem="SK7-cL-QWj" firstAttribute="top" secondItem="M8h-bo-z2Z" secondAttribute="bottom" id="VlY-A6-wbE"/>
+                            <constraint firstAttribute="trailing" secondItem="pRj-Io-xm8" secondAttribute="trailing" constant="15" id="XAI-GL-f9d"/>
+                            <constraint firstItem="q0u-Fk-W1O" firstAttribute="centerY" secondItem="M8h-bo-z2Z" secondAttribute="centerY" id="Yfo-XV-4L7"/>
+                            <constraint firstItem="M8h-bo-z2Z" firstAttribute="top" secondItem="sG8-Sz-Xag" secondAttribute="top" id="bQg-vp-tlA"/>
+                            <constraint firstAttribute="trailing" secondItem="q0u-Fk-W1O" secondAttribute="trailing" constant="15" id="pqW-aM-cxR"/>
+                            <constraint firstItem="sG8-Sz-Xag" firstAttribute="leading" secondItem="7ve-lz-Ixk" secondAttribute="leading" constant="15" id="wBh-xn-C68"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" name="Blue Shadow"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.20000000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7ve-lz-Ixk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="K1E-Yw-Rga"/>
+                    <constraint firstItem="7ve-lz-Ixk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Yrj-8q-fhP"/>
+                    <constraint firstAttribute="trailing" secondItem="7ve-lz-Ixk" secondAttribute="trailing" constant="15" id="bZa-SQ-o9b"/>
+                    <constraint firstAttribute="bottom" secondItem="7ve-lz-Ixk" secondAttribute="bottom" constant="20" id="y8O-Bj-10t"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="constraintCosmosHeight" destination="IzO-w1-zlE" id="g3h-FR-Nqr"/>
+                <outlet property="imageProfile" destination="sG8-Sz-Xag" id="y5k-uh-Axk"/>
+                <outlet property="labelDate" destination="q0u-Fk-W1O" id="d7g-6u-OTy"/>
+                <outlet property="labelName" destination="M8h-bo-z2Z" id="jGe-kV-8md"/>
+                <outlet property="labelProfession" destination="SK7-cL-QWj" id="Vbn-gQ-VsI"/>
+                <outlet property="labelText" destination="fXS-dR-Gc4" id="GvY-g2-wT0"/>
+                <outlet property="viewRating" destination="pRj-Io-xm8" id="ZLG-RA-IpQ"/>
+            </connections>
+            <point key="canvasLocation" x="273.91304347826087" y="120.87053571428571"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="pRj-Io-xm8">
+            <size key="intrinsicContentSize" width="120" height="20"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="filled_star" width="20.5" height="19.5"/>
+        <image name="hollow_star" width="20.5" height="19.5"/>
+        <image name="profile_placeholder" width="99" height="99"/>
+        <namedColor name="4">
+            <color red="0.51764705882352946" green="0.58039215686274515" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Blue Shadow">
+            <color red="0.16862745098039217" green="0.47058823529411764" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="81" id="KGk-i7-Jjw" customClass="ViewPollTVC" customModule="HSN" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="404" height="51"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="404" height="51"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uFh-3A-wB2" customClass="HSNPollProgressView" customModule="HSN" customModuleProvider="target">
+                        <rect key="frame" x="5" y="11" width="319" height="41"/>
+                        <color key="tintColor" name="5"/>
+                        <color key="progressTintColor" name="1"/>
+                        <color key="trackTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </progressView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nle-M5-aem">
+                        <rect key="frame" x="324" y="22.5" width="80" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="HuN-6i-hpc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXO-gC-qch">
+                        <rect key="frame" x="20" y="22.5" width="289" height="17"/>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selected_recipient" translatesAutoresizingMaskIntoConstraints="NO" id="xhx-rh-Thb">
+                        <rect key="frame" x="294" y="23.5" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="cSG-sD-NTT"/>
+                            <constraint firstAttribute="width" constant="15" id="n2S-3g-K5Q"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="IXO-gC-qch" firstAttribute="leading" secondItem="uFh-3A-wB2" secondAttribute="leading" constant="15" id="271-5D-qSe"/>
+                    <constraint firstItem="nle-M5-aem" firstAttribute="leading" secondItem="IXO-gC-qch" secondAttribute="trailing" constant="15" id="43z-9Z-EPd"/>
+                    <constraint firstItem="xhx-rh-Thb" firstAttribute="centerY" secondItem="IXO-gC-qch" secondAttribute="centerY" id="4ix-6Q-J19"/>
+                    <constraint firstItem="xhx-rh-Thb" firstAttribute="trailing" secondItem="IXO-gC-qch" secondAttribute="trailing" id="6HU-G5-t3e"/>
+                    <constraint firstItem="uFh-3A-wB2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-15" id="764-xY-SjT"/>
+                    <constraint firstItem="nle-M5-aem" firstAttribute="centerY" secondItem="IXO-gC-qch" secondAttribute="centerY" id="AjM-Af-bDr"/>
+                    <constraint firstItem="nle-M5-aem" firstAttribute="leading" secondItem="uFh-3A-wB2" secondAttribute="trailing" id="ifq-a9-omJ"/>
+                    <constraint firstItem="nle-M5-aem" firstAttribute="centerY" secondItem="uFh-3A-wB2" secondAttribute="centerY" id="maF-Uy-TuN"/>
+                    <constraint firstItem="uFh-3A-wB2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="njs-5l-qG4"/>
+                    <constraint firstAttribute="trailing" secondItem="nle-M5-aem" secondAttribute="trailing" id="pfX-HN-2rp"/>
+                    <constraint firstAttribute="bottom" secondItem="uFh-3A-wB2" secondAttribute="bottom" id="qhE-ZZ-de9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageSelected" destination="xhx-rh-Thb" id="dl2-vc-pCc"/>
+                <outlet property="labelOptionName" destination="IXO-gC-qch" id="p51-cv-FNn"/>
+                <outlet property="labelTotalPercentage" destination="nle-M5-aem" id="qq1-KK-09I"/>
+                <outlet property="progressView" destination="uFh-3A-wB2" id="HQl-ES-BnN"/>
+            </connections>
+            <point key="canvasLocation" x="47.826086956521742" y="119.86607142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="selected_recipient" width="28" height="28"/>
+        <namedColor name="1">
+            <color red="0.8666666666666667" green="0.87058823529411766" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="5">
+            <color red="0.11764705882352941" green="0.24705882352941178" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
